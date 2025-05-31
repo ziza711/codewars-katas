@@ -1,10 +1,24 @@
 
-function reverseWords(strs) {
-  // Go for it
-  
-  const words=strs.split(' ')
-  const arrstring=words.map(word =>word.split('').reverse('').join(''))
-  
-  return arrstring.join(' ')
+
+function calculator(a,b,sign){
+  // Your code here...
+  if(typeof a!=='number' || typeof b!=='number'){
+      return 'unknown value'};
+  switch(sign){
+      case'+':
+      return a+b;
+      break
+      case'-':
+      return a-b;
+      break
+      case'*':
+      return a*b;
+      break
+      case'/':
+      return a/b;
+      default:
+      return 'unknown value';
+  }
+  return sign;
 }
-console.log(reverseWords('This is an example!'))
+console.log(calculator(2,3,'/'));
