@@ -1,24 +1,18 @@
 
-
-function calculator(a,b,sign){
-  // Your code here...
-  if(typeof a!=='number' || typeof b!=='number'){
-      return 'unknown value'};
-  switch(sign){
-      case'+':
-      return a+b;
-      break
-      case'-':
-      return a-b;
-      break
-      case'*':
-      return a*b;
-      break
-      case'/':
-      return a/b;
-      default:
-      return 'unknown value';
-  }
-  return sign;
+function neutralise(s1, s2) {
+  // Here be dragons!
+  let result="";
+  for(let i=0; i< s1.length; i++){
+    const char1=s1[i];
+    const char2=s2[i];
+  if (char1 === char2){
+    result+=char1
+    }else {
+     result+="0";
+      }
+    
+    }
+  return result;
+  
 }
-console.log(calculator(2,3,'/'));
+neutralise("+-++--", "++--++");
