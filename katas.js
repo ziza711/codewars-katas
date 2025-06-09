@@ -1,8 +1,10 @@
 
-function solution(str){
-    
-    const arr= str.split("").reverse().join("");
-    return arr;
+function evenOrOdd(number) {
+  if(number%2 == 0) {
+    return "Even";
+  } else if (number%2 !== 0){
+    return "Odd";
+  }
   
 }
-console.log(solution("sabine"));
+evenOrOdd(6);
