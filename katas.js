@@ -1,10 +1,7 @@
 
-function testEven(n) {
-    //Your awesome code here!
-  if(n%2 === 0 ){
-    return true;  
-  } else {
-    return false;
-  }
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  sum = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+  return sum;
 }
-console.log(testEven(0.4));
+console.log(goals(3,4,5));
