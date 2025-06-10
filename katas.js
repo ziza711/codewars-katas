@@ -1,18 +1,10 @@
 
-function basicOp(operation, value1, value2){
-  //Code
-  switch (operation){
-    case'+':
-     return value1 + value2;
-    case'-':
-     return value1 - value2
-    case'*':
-     return value1 * value2
-    case'/':
-     return value1 / value2
-    default:
-    return "invalid operation"
+function testEven(n) {
+    //Your awesome code here!
+  if(n%2 === 0 ){
+    return true;  
+  } else {
+    return false;
   }
-  
 }
-  console.log(basicOp('/',49,7));
+console.log(testEven(0.4));
