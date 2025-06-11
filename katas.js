@@ -1,7 +1,17 @@
 
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  // code goes here
-  sum = laLigaGoals + copaDelReyGoals + championsLeagueGoals;
-  return sum;
+function validateHello(greetings) {
+ const messages = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
+ const greeting = greetings.toLowerCase();
+  for ( i=0; i< messages.length; i++){
+     
+    if (greeting.includes(messages[i])){
+      return true;
+  
+    }
+    }
+  return false;
+  
+ 
 }
-console.log(goals(3,4,5));
+
+validateHello('hello');
