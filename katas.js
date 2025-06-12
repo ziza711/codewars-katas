@@ -1,14 +1,13 @@
 
-function sumMix(x){
-  let sum = 0;
-  for (let i = 0; i < x.length; i++){
-    sum+= Number(x[i])
-    if (typeof x[i] ===  'number'){
-          
-   } 
+function stray(numbers) {
+  const first = numbers[0];
+  for ( let i = 0; i< numbers.length; i++) {
+    if(numbers[i]!== first){
+      return numbers[i];
+      
+    }
   }
+  return first;
   
-return sum;
-    
 }
-console.log(sumMix(['3',4,5,6,7]));
+console.log(stray([1,4,1,1,1]));
