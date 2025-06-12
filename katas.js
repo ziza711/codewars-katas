@@ -1,17 +1,14 @@
 
-function validateHello(greetings) {
- const messages = ['hello', 'ciao', 'salut', 'hallo', 'hola', 'ahoj', 'czesc']
- const greeting = greetings.toLowerCase();
-  for ( i=0; i< messages.length; i++){
-     
-    if (greeting.includes(messages[i])){
-      return true;
+function sumMix(x){
+  let sum = 0;
+  for (let i = 0; i < x.length; i++){
+    sum+= Number(x[i])
+    if (typeof x[i] ===  'number'){
+          
+   } 
+  }
   
-    }
-    }
-  return false;
-  
- 
+return sum;
+    
 }
-
-validateHello('hello');
+console.log(sumMix(['3',4,5,6,7]));
