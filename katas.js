@@ -1,13 +1,11 @@
 
-function stray(numbers) {
-  const first = numbers[0];
-  for ( let i = 0; i< numbers.length; i++) {
-    if(numbers[i]!== first){
-      return numbers[i];
-      
-    }
-  }
-  return first;
-  
+function squareSum(numbers){
+  let sum = 0;
+  for (let i=0; i<numbers.length; i++){
+   sum += numbers[i] ** 2;
+       
+ }
+return sum;
+
 }
-console.log(stray([1,4,1,1,1]));
+console.log(squareSum([1,3,2]))
