@@ -1,11 +1,6 @@
 
-function between(a, b) {
-  const result = [];
-  for (let i = a ; i <= b; i++) {
-    result.push(i);
-  }
-  return result;
-
-
+function litres(time) {
+  
+  return (time * 0.5) | 0;
 }
-console.log(between(-2,4));
+console.log(litres(6.7))
