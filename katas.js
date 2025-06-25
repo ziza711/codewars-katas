@@ -1,6 +1,10 @@
 
-function litres(time) {
+function sumStr(a,b) {
+  let sum=Number(a) + Number(b)
   
-  return (time * 0.5) | 0;
-}
-console.log(litres(6.7))
+  let str = sum.toString()
+  
+  return str;
+};
+  
+console.log(sumStr('4', '5'));
