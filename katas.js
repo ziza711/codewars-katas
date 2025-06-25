@@ -1,10 +1,7 @@
+function reverseList(list) {
+  return list.reverse();
+  
+  
 
-function sumStr(a,b) {
-  let sum=Number(a) + Number(b)
-  
-  let str = sum.toString()
-  
-  return str;
-};
-  
-console.log(sumStr('4', '5'));
+}
+console.log(reverseList([1, 2, 3, 4]));
