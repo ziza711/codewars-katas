@@ -1,7 +1,11 @@
-function reverseList(list) {
-  return list.reverse();
-  
-  
 
+function grow(x){
+  let multiple = 1;
+for (i=0; i < x.length; i++){
+ 
+  multiple = multiple * x[i]
+  console.log(multiple) 
 }
-console.log(reverseList([1, 2, 3, 4]));
+ return multiple; 
+}
+grow([1,2,3,4])
