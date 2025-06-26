@@ -1,11 +1,6 @@
-
-function grow(x){
-  let multiple = 1;
-for (i=0; i < x.length; i++){
- 
-  multiple = multiple * x[i]
-  console.log(multiple) 
+function makeUpperCase(str) {
+  // Code here
+  const word = str.toUpperCase()
+  return word;
 }
- return multiple; 
-}
-grow([1,2,3,4])
+console.log(makeUpperCase('sabine'))
